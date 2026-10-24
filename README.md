@@ -1,48 +1,30 @@
-# Iphone_Sales-Data_Analysis
-The dataset includes the following columns:
+# iPhone Sales Data Analysis
 
-Product Name
-Product URL
-Brand
-Sale Price
-Mrp (Maximum Retail Price)
-Discount Percentage
-Number Of Ratings
-Number Of Reviews
-Upc
-Star Rating
-Ram
-Analysis Steps
+Exploratory data analysis of iPhone listings (price, discount, ratings, reviews) with interactive Plotly charts.
 
-Understand the Data
-1. Data Cleaning
-Identify and handle missing values.
-Check for duplicates and remove if necessary.
-Ensure data types are appropriate for analysis.
-2. Data Wrangling
-Explore the dataset to understand its structure.
-Perform any necessary transformations or feature engineering.
-Aggregate or filter data as needed.
-3. Exploratory Data Analysis (EDA)
-Visualize the distribution of sale prices.
-Analyze the relationship between discount percentage and sale price.
-Explore the correlation between ratings and sales.
-4. Insightful Visualizations
-Create visualizations (e.g., scatter plots, bar charts) to highlight key trends.
-Compare sales performance across different iPhone models.
-Analyze the impact of discounts on sales.
-Tools Used
-Python
-Jupyter Notebooks
-Pandas for data manipulation
-Ploty for data visualization
-How to Run the Analysis
-Clone the repository to your local machine.
-Install the required Python libraries by running pip install -r requirements.txt (if a requirements file is provided).
-Open the Jupyter Notebook file (analysis.ipynb) to run the analysis step by step.
-Results and Conclusion
-Summarize the key findings and insights obtained from the analysis. Discuss any trends or patterns discovered and their potential implications.
+## Dataset
 
-Feel free to reach out for any questions or further collaboration.
+`Phone_Sales.csv` with these columns: Product Name, Product URL, Brand, Sale Price, MRP, Discount Percentage, Number Of Ratings, Number Of Reviews, UPC, Star Rating, RAM.
 
-Happy analyzing!
+> The CSV is not included in this repo. Place it next to the notebook before running.
+
+## What the notebook does
+
+1. **Data check** — missing values and summary statistics
+2. **Top-rated phones** — the 10 highest-rated iPhone models
+3. **Ratings and reviews** — number of ratings and reviews for the top models
+4. **Price vs. ratings** — how sale price relates to number of ratings
+5. **Discounts** — how discount percentage relates to ratings
+
+## Tools
+
+Python · pandas · NumPy · Plotly
+
+## Run it
+
+```bash
+git clone https://github.com/QosainBukhari/Iphone_Sales-Data_Analysis.git
+cd Iphone_Sales-Data_Analysis
+pip install pandas numpy plotly statsmodels jupyter
+jupyter notebook Phone_Sales.ipynb
+```
